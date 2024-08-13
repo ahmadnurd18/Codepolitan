@@ -1,0 +1,95 @@
+h1,
+h3,
+p,
+label {
+  text-align: center;
+  font-family: "Poppins";
+}
+
+#container {
+  background-color: #003049;
+  width: 90%;
+  height: 200px;
+  margin: 0 auto;
+  border: 5px solid #003049;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 12px;
+}
+
+#container div {
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+}
+
+#container h3,
+p {
+  text-align: center;
+}
+.login {
+  margin: 0 auto;
+  border: 5px solid #ccc;
+  width: 60%;
+  height: 200px;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 15px;
+  align-content: space-between;
+}
+.login input {
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.login button {
+  background-color: rgb(43, 43, 225);
+  color: aliceblue;
+  width: 120px;
+  height: 50px;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.login label::after {
+  content: "*";
+  color: red;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  border: 5px solid black;
+  height: 500px;
+  display: flex;
+}
+
+main .sidebar {
+  background-color: #003049;
+  flex: 1 2 300px;
+}
+main .content {
+  background-color: cadetblue;
+  flex: 2 1 800px;
+}
+
+.circle {
+  margin-left: 50%;
+  margin-right: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  height: 7rem;
+  background-color: rgb(66, 107, 212);
+  border-radius: 4rem;
+}
+
+.circle:hover {
+  background-color: pink;
+}

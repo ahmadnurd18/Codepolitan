@@ -1,0 +1,7 @@
+Javascript dom.
+
+
+
+*querySelector/querySelectorAll
+-Menggunakan queryselector untuk mengakses suatu element
+-didapatkan dari elemen pertama.
