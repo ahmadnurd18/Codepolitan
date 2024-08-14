@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>JQuery</h1>
+    <h2>Saya tinggal dimana?</h2>
+    <ul>
+      <li>Bogor</li>
+      <li>Jakarta</li>
+      <li>Surabaya</li>
+    </ul>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        console.log("jquery ready");
+        $("li").text("Saya tinggal di " + $("li").text());
+      });
+    </script>
+  </body>
+</html>

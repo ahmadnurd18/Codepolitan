@@ -72,7 +72,7 @@ class Color {
   }
   hsl() {
     const { h, s, l } = this;
-    return `hsl(${h},${s},${l}%)`;
+    return `hsl(${h},${s}%,${l}%)`;
   }
 
   fulllySaturated() {
@@ -129,7 +129,7 @@ class Color {
   }
 }
 
-// const skyColor = new Color(185, 243, 252, 'Sky');
+const skyColor = new Color(185, 243, 252, "Sky");
 
 // document.body.style.backgroundColor = new Color(123, 80, 90, "hijau").rgba();
 // document.body.style.backgroundColor = new Color(123, 80, 90, "hijau").rgb();
@@ -140,3 +140,34 @@ class Color {
 //   90,
 //   "hijau"
 // ).colorName();
+
+class Peliharaan {
+  constructor(name, age) {
+    console.log("extend parent");
+    this.name = name;
+    this.age = age;
+  }
+  makan() {
+    console.log(`${this.name} sedang makan`);
+  }
+  tidur() {
+    console.log(`${this.name} sedang tidur`);
+  }
+}
+
+class Kucing extends Peliharaan {
+  constructor(name, age, lives) {
+    console.log("extend child");
+    super(name, age);
+    this.lives = lives;
+  }
+  meong() {
+    return `${this.name} meong`;
+  }
+}
+
+class Anjing extends Peliharaan {
+  gong() {
+    return `${this.name} gukguk`;
+  }
+}
